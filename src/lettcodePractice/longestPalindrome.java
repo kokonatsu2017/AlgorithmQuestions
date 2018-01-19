@@ -1,33 +1,34 @@
 package lettcodePractice;
 
 public class longestPalindrome {
+	/**
+	 * Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
 
-	
-	public String longestPalindrome(String string) {
-        int max = 0;
-        int s = 0;
-        int e = 0;
-        char[] chars = string.toCharArray();
-        for(int i = 0; i < string.length(); i++){
-        	if(isPanlindrome(chars, i - max - 1, i)){
-        		s = i - max - 1;
-        		e = i;
-        		max += 2;
-        	} else if (isPanlindrome(chars, i - max, i)){
-        		s = i - max;
-        		e = i;
-        		max += 1;
+		This is case sensitive, for example "Aa" is not considered a palindrome here.
+	 * @param s
+	 * @return
+	 */
+	public int longestPalindrome(String s) {
+        int[] lower = new int[26];
+        int[] upper = new int[26];
+        
+        for(int i = 0; i < s.length(); i++){
+        	char c = s.charAt(i);
+        	
+        	if(Character.isUpperCase(c)){
+        		upper[c -'A']++;
+        	} else {
+        		lower[c - 'a']++;
         	}
         }
-        return string.substring(s, e + 1);
+        
+        int alphabets = 0;
+        for(int i = 0; i < 26; i++){
+            alphabets += (lower[i] /2 ) * 2;
+            alphabets += (upper[i] /2 ) * 2;
+        }
+        
+        return alphabets == s.length() ? alphabets : alphabets + 1;
+
     }
-	public boolean isPanlindrome(char[] chs, int s, int e){
-		if(s < 0 ) return false;
-		while(s < e){
-			if(chs[s] != chs[e]) return false;
-			s++;
-			e--;
-		}
-		return true;
-	}
 }
