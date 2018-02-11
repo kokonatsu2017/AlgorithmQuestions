@@ -10,7 +10,7 @@ package Sorting;
      4. Merge the two halves sorted in step 2 and 3:
              Call merge(arr, l, m, r)   
  * 
- * O(nlogn)
+ * O(nlogn)vcv 
  *
  */
 public class MergeSort {
