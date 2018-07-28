@@ -20,7 +20,7 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 public class decodeWays {
 	public int numDecodings(String s) {
         int n = s.length();
-        int[] dp = new int[n];
+        int[] dp = new int[n + 1];
         
         dp[0] = 1;
         dp[1] = s.charAt(0) != '0' ? 1 : 0;
@@ -38,6 +38,6 @@ public class decodeWays {
         	}
         }
         
-        return dp[0];
+        return dp[n];
     }
 }
