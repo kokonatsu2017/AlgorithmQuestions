@@ -52,6 +52,10 @@ public class NestedListWeightSum {
 	 *     public List<NestedInteger> getList();
 	 * }
 	 */
+	
+	
+	
+	/**
 	public int depthSum(List<NestedInteger> nestedList) {
         return depthSum(nestedList,1);
     }
@@ -66,5 +70,5 @@ public class NestedListWeightSum {
             }
         }
         return sum;
-    }
+    }**/
 }
