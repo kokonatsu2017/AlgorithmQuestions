@@ -1,4 +1,4 @@
-package Amazon;
+package Easy;
 /**
  * LettCode 204
  * @author kokonatsudream

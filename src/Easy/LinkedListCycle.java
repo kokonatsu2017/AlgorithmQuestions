@@ -1,4 +1,4 @@
-package Amazon;
+package Easy;
 /**
  * LeetCode 141
  * @author kokonatsudream

@@ -1,4 +1,4 @@
-package Amazon;
+package Easy;
 /**
  * LeetCode 206
  * @author kokonatsudream

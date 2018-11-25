@@ -1,4 +1,7 @@
 package Amazon;
+
+import lib.ListNode;
+
 /**
  * LeetCode 160
  * @author kokonatsudream
@@ -6,14 +9,6 @@ package Amazon;
  */
 public class IntersectionOfTwoLinkedList {
 	
-	public class ListNode {
-		      int val;
-		      ListNode next;
-		      ListNode(int x) {
-		          val = x;
-		          next = null;
-		      }
-	}
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if(headA == null || headB == null) return null;
         
