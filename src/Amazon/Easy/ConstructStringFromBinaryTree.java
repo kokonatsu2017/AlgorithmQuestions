@@ -1,4 +1,4 @@
-package Easy;
+package Amazon.Easy;
 
 import lib.TreeNode;
 

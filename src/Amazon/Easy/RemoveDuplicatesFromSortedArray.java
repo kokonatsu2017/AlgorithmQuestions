@@ -1,4 +1,4 @@
-package Easy;
+package Amazon.Easy;
 
 public class RemoveDuplicatesFromSortedArray {
 	public int removeDuplicates(int[] nums) {

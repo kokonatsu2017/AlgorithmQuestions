@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.Medium;
 /**
  * LeetCode 640
  * @author kokonatsudream

@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.Medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;

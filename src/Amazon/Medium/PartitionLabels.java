@@ -1,8 +1,10 @@
-package Amazon;
+package Amazon.Medium;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * LeetCode 763
+ *  */
 public class PartitionLabels {
 	public List<Integer> partitionLabels(String S) {
         int[] lastChar = new int[26];

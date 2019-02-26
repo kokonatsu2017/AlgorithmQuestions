@@ -1,4 +1,4 @@
-package Easy;
+package Amazon.Easy;
 
 public class RotateString {
 	public boolean rotateString(String A, String B) {

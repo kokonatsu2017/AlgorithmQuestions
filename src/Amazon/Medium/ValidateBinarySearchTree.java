@@ -1,6 +1,6 @@
-package Amazon;
+package Amazon.Medium;
 
-import Amazon.LowestCommonAncestorBinaryTree.TreeNode;
+import lib.TreeNode;
 
 /**
  * LeetCode 98

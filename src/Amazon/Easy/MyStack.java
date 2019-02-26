@@ -1,4 +1,4 @@
-package Easy;
+package Amazon.Easy;
 
 import java.util.LinkedList;
 import java.util.Queue;
